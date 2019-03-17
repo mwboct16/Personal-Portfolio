@@ -1,0 +1,99 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    overflow: hidden;
+}
+
+#highlight {
+    font-weight: bold;
+    color: #ef6c00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 5px 10px black;
+}
+
+#title {
+    font-weight: bold;
+}
+
+p {
+    color: white;
+}
+
+.flow-text {
+    padding: 55px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+.divider {
+    margin-top: 55px;
+}
+
+/* h1 {
+    color: white;
+} */
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+#pic-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: black;
+    opacity: .8;
+
+}
+
+#background {
+    position: relative;
+    background-image: url('../images/office2.jpg');
+    /* Photo by Daniel Korpai on Unsplash, https://unsplash.com/@danielkorpai */
+    background-size: cover;
+    height: 100%;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    padding-top: 10px;
+    transition: width 1s, height 1s; 
+}
+
+#logo:hover {
+    width: 55px;
+    height: 55px;
+    padding-top: 10px;
+    transition: width 1s, height 1s;
+}
+
+li {
+    opacity: .7;
+    transition: opacity 1s;
+}
+
+li:hover {
+    opacity: 1;
+    transition: opacity 1s;
+}
