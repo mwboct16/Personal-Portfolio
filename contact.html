@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- CSS and Styling -->
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-    <link rel="icon" type="image/co" href="images/favicon.png">
+    <link rel="icon" type="image/co" href="assets/images/favicon.png">
     <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
     <link href="assets/css/style.css" type="text/css" rel="stylesheet">
 
@@ -19,36 +20,35 @@
     <!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us20.list-manage.com","uuid":
     "e405f5da0c681d551330740f3","lid":"6375873fc6","uniqueMethods":true}) })</script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <!-- Start of Async Drift Code -->
-<script>
+    <script>
         "use strict";
-        
-        !function() {
-          var t = window.driftt = window.drift = window.driftt || [];
-          if (!t.init) {
-            if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-            t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-            t.factory = function(e) {
-              return function() {
-                var n = Array.prototype.slice.call(arguments);
-                return n.unshift(e), t.push(n), t;
-              };
-            }, t.methods.forEach(function(e) {
-              t[e] = t.factory(e);
-            }), t.load = function(t) {
-              var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-              o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-              var i = document.getElementsByTagName("script")[0];
-              i.parentNode.insertBefore(o, i);
-            };
-          }
+
+        !function () {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function (e) {
+                        return function () {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function (e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function (t) {
+                        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
         }();
         drift.SNIPPET_VERSION = '0.3.1';
         drift.load('cac3rcczx5sz');
-        </script>
-        <!-- End of Async Drift Code -->
-        
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </script>
+    <!-- End of Async Drift Code -->
     <title>Development Portfolio</title>
 </head>
 
@@ -59,13 +59,17 @@
             <a href="index.html" class="brand-logo center"><img src="assets/images/Mlogo.png" id="logo"></a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <!-- <li class="active"><a href="#">About</a></li> -->
-                <li class="active"><a href="projects.html" title="Projects Created" target="_blank"><i class="fas fa-project-diagram"></i></a></li>
-                <li class="active"><a href="contact.html" title="Contact Form" target="_blank"><i class="far fa-envelope"></i></a></li>
+                <li class="active"><a href="projects.html" title="Projects Created" target="_blank"><i
+                            class="fas fa-project-diagram"></i></a></li>
+                <li class="active"><a href="contact.html" title="Contact Form" target="_blank"><i
+                            class="far fa-envelope"></i></a></li>
             </ul>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <!-- <li class="active"><a href="#">About</a></li> -->
-                <li class="active"><a href="https://github.com/mwboct16" title="GitHub Profile" target="_blank"><i class="fab fa-github"></i></a></li>
-                <li class="active"><a href="https://www.linkedin.com/in/prodbymikey/" title="LinkedIn Profile" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                <li class="active"><a href="https://github.com/mwboct16" title="GitHub Profile" target="_blank"><i
+                            class="fab fa-github"></i></a></li>
+                <li class="active"><a href="https://www.linkedin.com/in/prodbymikey/" title="LinkedIn Profile"
+                        target="_blank"><i class="fab fa-linkedin"></i></a></li>
             </ul>
         </div>
     </nav>
@@ -73,8 +77,45 @@
     <div id="background">
         <div class="container valign-wrapper">
             <div class="row">
-                <div class="col s12" id="content">
-                    <!-- CONTENT GOES HERE -->
+                <div class="col s6" id="content">
+                    <img src="assets/images/mail.png" class="contact-logo modal-trigger" id="mail-logo" href="#modal1">
+                </div>
+                <div class="col s4" id="content">
+                    <img src="assets/images/phone-call.png" class="contact-logo modal-trigger" id="phone-logo"
+                        href="#modal2">
+                    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 
+                        title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>                                 -->
+                </div>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h4><img src="assets/images/mail-in-black.png" id="email-modal-img"></h4>
+                    <a href="mailto:mwboct16@gmail.com">
+                        <p>mwboct16@gmail.com</p>
+                    </a>
+                    <hr class="modal-hr">
+                    <p class="modal-note" id="email-modal-note">I will try my best to reply back within 24-hours. The
+                        fastest way to contact me is through the phone
+                        option provided
+                    </p>
+                    <span class="gif" id="email-gif"></span>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <h4><img src="assets/images/phone-call-in-black.png" id="phone-modal-img"></h4>
+                    <a href="tel:6099493417">
+                        <p>(609) 949-3417</p>
+                    </a>
+                    
+                    <hr class="modal-hr">
+                    <p class="modal-note" id="phone-modal-note">Fastest way to contact me! I am able to text 24/7. To
+                        call me over the phone please
+                        assure we have set a time we can both talk.
+                    </p>
+                    <span class="gif" id="phone-gif"></span>
                 </div>
             </div>
         </div>
@@ -88,7 +129,7 @@
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="/Personal-Portfolio/assets/javascript/script.js"></script>
+<script src="assets/javascript/script.js"></script>
 </body>
 
 </html>

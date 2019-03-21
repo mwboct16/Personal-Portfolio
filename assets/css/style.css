@@ -78,22 +78,88 @@ p {
     width: 50px;
     height: 50px;
     padding-top: 10px;
-    transition: width 1s, height 1s; 
+    opacity: .7;
+    transition: width 1s, height 1s, opacity 1s; 
 }
 
 #logo:hover {
     width: 55px;
     height: 55px;
     padding-top: 10px;
-    transition: width 1s, height 1s;
+    opacity: 1;
+    transition: width 1s, height 1s, opacity 1s;
 }
 
 li {
     opacity: .7;
-    transition: opacity 1s;
+    transition: opacity 1s !important;
 }
 
 li:hover {
     opacity: 1;
     transition: opacity 1s;
+}
+
+.contact-logo {
+    color: white;
+    width: 150px;
+    height: 150px;
+    padding: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    opacity: .8;
+    transition: width 1s, height 1s, opacity 1s;
+
+}
+
+.contact-logo:hover {
+    width: 155px;
+    height: 155px;
+    opacity: 1;
+    transition: width 1s, height 1s, opacity 1s;
+}
+
+.modal p, h4 {
+    color: black;
+    text-shadow: none;
+}
+
+.modal p {
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.modal-note {
+    font-size: 18px !important;
+    font-weight: normal;
+    line-height: 25px;
+    margin-top: 5px;
+}
+
+.modal-hr {
+    margin: 25px;
+}
+
+#phone-modal-img {
+    height: 50px;
+    width: 50px;
+}
+
+#email-modal-img {
+    height: 50px;
+    width: 50px;
+}
+
+.giphyImage {
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    height: 200px;
+    width: 200px;
+}
+
+.carousel.carousel-slider {
+    width: 720px;
 }
