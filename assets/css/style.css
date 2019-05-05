@@ -36,6 +36,7 @@ p {
 
 .divider {
     margin-top: 55px;
+    margin-bottom: 25px; 
 }
 
 /* h1 {
@@ -162,4 +163,84 @@ li:hover {
 
 .carousel.carousel-slider {
     width: 720px;
+    margin: auto;
+}
+
+.projects {
+    width: 250px;
+    height: 250px;
+    margin: 0 5px;
+    transition: border .5s;
+}
+
+.projects:hover {
+    border: 2px solid #ef6c00;
+    transition: border .5s;
+}
+
+.project-imgs {
+    display: inline-block;
+    float: left;
+    position: relative;
+    box-shadow: 2px 4px 10px black;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+
+.project-imgs:hover .img-overlay {
+    opacity: .8;
+  }
+
+.img-overlay-text {
+    color: white;
+    font-size: 55px;
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    word-wrap: break-word;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.lang-logos {
+    height: 100px;
+    width: 100px;
+    margin: 30px 10px;
+
+}
+
+.logo-container {
+    margin-left:  auto;
+    position: relative;
+}
+
+.logos {
+    margin-left: 145px; 
+}
+
+#csslogo {
+    padding: 3px;
+}
+
+#bio {
+    padding: 15px;
+    font-weight: lighter;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 35px;
+    font-size: 20px;
+
 }
